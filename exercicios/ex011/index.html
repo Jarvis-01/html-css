@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídias</title>
+</head>
+<body>
+    <h1>Imagem dinâmica</h1>
+    <p>Vamos fazer o teste de comportamento de imagens em diferentes tamanhos de navegadores</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagens/img-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagens/img-m.png" type="image/png">
+        <img src="imagens/img-g.png" alt="Imagem flexivel">
+    </picture>
+    
+    <h1>Áudio</h1>
+    <p>Famos testar o reprodutor de áudio</p>
+    <audio preload="metadata" autoplay controls> <!--preload é para como será o carregamento-->
+        <source src="audio/Losing My Mind - NEFFEX.mp3" type="audio/mpeg">
+        <!--caso esse formato não rodar é possivel colocar outros sources com outros formatos-->
+        <a href="audio/Losing My Mind - NEFFEX.mp3">baixar</a>
+    </audio>
+</body>
+</html>
