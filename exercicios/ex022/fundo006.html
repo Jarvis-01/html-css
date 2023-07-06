@@ -7,16 +7,20 @@
     <style>
         body{
             height: 100vh;
+            /*
             background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: repeat-y;
-            background-size: cover; /*cobre a tela inteira mesmo que seja necessario cortar a imagem*/
+            background-size: cover; /*cobre a tela inteira mesmo que seja necessario cortar a imagem
+            background-attachment: fixed;/*imagem de fundo fixa*/
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover;
         }
 
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border: 1px solid darkblue;
